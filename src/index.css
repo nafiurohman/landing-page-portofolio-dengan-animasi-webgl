@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Editorial dark theme - sophisticated, premium */
+    --background: 220 15% 6%;
+    --foreground: 45 10% 95%;
+
+    --card: 220 15% 8%;
+    --card-foreground: 45 10% 95%;
+
+    --popover: 220 15% 8%;
+    --popover-foreground: 45 10% 95%;
+
+    /* Primary: soft blue accent */
+    --primary: 210 60% 60%;
+    --primary-foreground: 220 15% 6%;
+
+    /* Secondary: subtle warm gray */
+    --secondary: 220 10% 15%;
+    --secondary-foreground: 45 10% 90%;
+
+    --muted: 220 10% 12%;
+    --muted-foreground: 220 10% 55%;
+
+    /* Accent: magenta hint */
+    --accent: 320 50% 55%;
+    --accent-foreground: 45 10% 95%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 45 10% 95%;
+
+    --border: 220 10% 18%;
+    --input: 220 10% 18%;
+    --ring: 210 60% 60%;
+
+    --radius: 0.25rem;
+
+    /* Custom shader colors */
+    --shader-blue: 210 70% 55%;
+    --shader-magenta: 320 55% 50%;
+    --shader-deep: 250 40% 30%;
+
+    /* Typography */
+    --font-display: 'Archivo', sans-serif;
+    --font-body: 'Archivo', sans-serif;
+
+    /* Sidebar */
+    --sidebar-background: 220 15% 6%;
+    --sidebar-foreground: 45 10% 95%;
+    --sidebar-primary: 210 60% 60%;
+    --sidebar-primary-foreground: 220 15% 6%;
+    --sidebar-accent: 220 10% 15%;
+    --sidebar-accent-foreground: 45 10% 90%;
+    --sidebar-border: 220 10% 18%;
+    --sidebar-ring: 210 60% 60%;
+  }
+
+  .dark {
+    --background: 220 15% 6%;
+    --foreground: 45 10% 95%;
+    --card: 220 15% 8%;
+    --card-foreground: 45 10% 95%;
+    --popover: 220 15% 8%;
+    --popover-foreground: 45 10% 95%;
+    --primary: 210 60% 60%;
+    --primary-foreground: 220 15% 6%;
+    --secondary: 220 10% 15%;
+    --secondary-foreground: 45 10% 90%;
+    --muted: 220 10% 12%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 320 50% 55%;
+    --accent-foreground: 45 10% 95%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 45 10% 95%;
+    --border: 220 10% 18%;
+    --input: 220 10% 18%;
+    --ring: 210 60% 60%;
+    --sidebar-background: 220 15% 6%;
+    --sidebar-foreground: 45 10% 95%;
+    --sidebar-primary: 210 60% 60%;
+    --sidebar-primary-foreground: 220 15% 6%;
+    --sidebar-accent: 220 10% 15%;
+    --sidebar-accent-foreground: 45 10% 90%;
+    --sidebar-border: 220 10% 18%;
+    --sidebar-ring: 210 60% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+}
+
+@layer components {
+  /* Hero text styling */
+  .hero-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 0.85;
+    text-transform: uppercase;
+  }
+
+  .hero-subtitle {
+    font-family: var(--font-display);
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  /* Blend mode for text mask effect */
+  .text-mask {
+    mix-blend-mode: difference;
+  }
+
+  /* Smooth scroll container */
+  .scroll-container {
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  /* Animation utilities */
+  .animate-fade-up {
+    animation: fade-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-fade-up-delay {
+    animation: fade-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-up-delay-2 {
+    animation: fade-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Canvas container */
+.canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+/* Content overlay */
+.content-overlay {
+  position: relative;
+  z-index: 10;
+}
