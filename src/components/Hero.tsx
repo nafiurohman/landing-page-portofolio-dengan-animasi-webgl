@@ -58,7 +58,7 @@ const Hero = () => {
           {/* Subtitle */}
           <div className="mt-6 sm:mt-8 animate-fade-up-delay">
             <p className="hero-subtitle text-xs sm:text-sm tracking-[0.3em] text-foreground/60">
-              Creative Developer & Designer
+              Pengembang Kreatif & Desainer
             </p>
           </div>
 
@@ -66,7 +66,7 @@ const Hero = () => {
           <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-fade-up-delay-2">
             <div className="flex flex-col items-center gap-3">
               <span className="text-[10px] tracking-[0.25em] text-foreground/40 uppercase">
-                Scroll
+                Gulir
               </span>
               <div className="w-px h-12 bg-gradient-to-b from-foreground/40 to-transparent" />
             </div>
@@ -77,10 +77,10 @@ const Hero = () => {
         <section className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 bg-background/80 backdrop-blur-sm">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-foreground/80 leading-relaxed tracking-wide">
-              Crafting digital experiences at the intersection of
-              <span className="text-foreground font-medium"> design</span>,
-              <span className="text-foreground font-medium"> technology</span>, and
-              <span className="text-foreground font-medium"> art</span>.
+              Menciptakan pengalaman digital di persimpangan
+              <span className="text-foreground font-medium"> desain</span>,
+              <span className="text-foreground font-medium"> teknologi</span>, dan
+              <span className="text-foreground font-medium"> seni</span>.
             </p>
             
             <div className="mt-12 sm:mt-16 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
@@ -88,7 +88,7 @@ const Hero = () => {
                 onClick={() => scrollToSection('work')}
                 className="group relative px-8 py-4 text-xs tracking-[0.2em] uppercase text-foreground border border-foreground/20 hover:border-foreground/60 transition-colors duration-500"
               >
-                <span className="relative z-10">View Work</span>
+                <span className="relative z-10">Lihat Karya</span>
                 <div className="absolute inset-0 bg-foreground/5 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
               </button>
               
@@ -96,7 +96,7 @@ const Hero = () => {
                 onClick={() => scrollToSection('about')}
                 className="group px-8 py-4 text-xs tracking-[0.2em] uppercase text-foreground/60 hover:text-foreground transition-colors duration-500"
               >
-                About Me
+                Tentang Saya
                 <span className="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
               </button>
             </div>
@@ -138,19 +138,19 @@ const Hero = () => {
             onClick={() => scrollToSection('about')}
             className="text-xs tracking-[0.15em] text-foreground/40 hover:text-foreground transition-colors duration-300 cursor-pointer"
           >
-            About
+            Tentang
           </span>
           <span 
             onClick={() => scrollToSection('skills')}
             className="text-xs tracking-[0.15em] text-foreground/40 hover:text-foreground transition-colors duration-300 cursor-pointer"
           >
-            Skills
+            Keahlian
           </span>
           <span 
             onClick={() => scrollToSection('contact')}
             className="text-xs tracking-[0.15em] text-foreground/40 hover:text-foreground transition-colors duration-300 cursor-pointer"
           >
-            Contact
+            Kontak
           </span>
         </div>
       </nav>

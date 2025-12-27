@@ -8,8 +8,8 @@ const skills = [
     items: ["Node.js", "Python", "PostgreSQL", "MongoDB", "GraphQL", "REST API"]
   },
   {
-    category: "Design",
-    items: ["Figma", "Adobe XD", "Photoshop", "Illustrator", "UI/UX Design", "Prototyping"]
+    category: "Desain",
+    items: ["Figma", "Adobe XD", "Photoshop", "Illustrator", "Desain UI/UX", "Prototyping"]
   },
   {
     category: "Tools",
@@ -20,21 +20,21 @@ const skills = [
 const experiences = [
   {
     role: "Senior Frontend Developer",
-    company: "Tech Company",
-    period: "2022 - Present",
-    description: "Leading frontend development for enterprise applications."
+    company: "Perusahaan Teknologi",
+    period: "2022 - Sekarang",
+    description: "Memimpin pengembangan frontend untuk aplikasi enterprise."
   },
   {
     role: "Full Stack Developer",
-    company: "Digital Agency",
+    company: "Agensi Digital",
     period: "2020 - 2022",
-    description: "Building web applications and mobile apps for various clients."
+    description: "Membangun aplikasi web dan mobile untuk berbagai klien."
   },
   {
     role: "UI/UX Designer",
     company: "Startup",
     period: "2019 - 2020",
-    description: "Designing user interfaces and improving user experiences."
+    description: "Mendesain antarmuka pengguna dan meningkatkan pengalaman pengguna."
   }
 ];
 
@@ -45,10 +45,10 @@ const SkillsSection = () => {
         {/* Section Header */}
         <div className="mb-16">
           <span className="text-xs tracking-[0.3em] text-muted-foreground uppercase">
-            03 — Skills & Experience
+            03 — Keahlian & Pengalaman
           </span>
           <h2 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground">
-            What I Do
+            Apa yang Saya Lakukan
           </h2>
         </div>
 
@@ -83,7 +83,7 @@ const SkillsSection = () => {
 
         {/* Experience Timeline */}
         <div>
-          <h3 className="text-2xl font-bold text-foreground mb-12">Experience</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-12">Pengalaman</h3>
           
           <div className="space-y-0">
             {experiences.map((exp, index) => (

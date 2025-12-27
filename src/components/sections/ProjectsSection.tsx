@@ -13,54 +13,54 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    category: "Web Development",
-    description: "A modern e-commerce platform with seamless user experience and payment integration.",
+    title: "Platform E-Commerce",
+    category: "Pengembangan Web",
+    description: "Platform e-commerce modern dengan pengalaman pengguna yang mulus dan integrasi pembayaran.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
     tags: ["React", "Node.js", "Stripe"],
     year: "2024"
   },
   {
     id: 2,
-    title: "Mobile Banking App",
-    category: "UI/UX Design",
-    description: "Intuitive mobile banking interface designed for maximum user engagement.",
+    title: "Aplikasi Mobile Banking",
+    category: "Desain UI/UX",
+    description: "Antarmuka mobile banking yang intuitif dirancang untuk keterlibatan pengguna maksimal.",
     image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
     tags: ["Figma", "Prototyping", "User Research"],
     year: "2024"
   },
   {
     id: 3,
-    title: "AI Dashboard",
-    category: "Web Development",
-    description: "Real-time analytics dashboard powered by machine learning algorithms.",
+    title: "Dashboard AI",
+    category: "Pengembangan Web",
+    description: "Dashboard analitik real-time yang didukung oleh algoritma machine learning.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
     tags: ["Next.js", "Python", "TensorFlow"],
     year: "2023"
   },
   {
     id: 4,
-    title: "Brand Identity",
+    title: "Identitas Brand",
     category: "Branding",
-    description: "Complete brand identity system for a tech startup company.",
+    description: "Sistem identitas brand lengkap untuk perusahaan startup teknologi.",
     image: "https://images.unsplash.com/photo-1634942537034-2531766767d1?w=800&h=600&fit=crop",
     tags: ["Logo Design", "Brand Guidelines", "Visual Identity"],
     year: "2023"
   },
   {
     id: 5,
-    title: "Social Media App",
-    category: "Mobile Development",
-    description: "Feature-rich social platform with real-time messaging and content sharing.",
+    title: "Aplikasi Media Sosial",
+    category: "Pengembangan Mobile",
+    description: "Platform sosial kaya fitur dengan pesan real-time dan berbagi konten.",
     image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
     tags: ["React Native", "Firebase", "WebSocket"],
     year: "2023"
   },
   {
     id: 6,
-    title: "Portfolio Website",
-    category: "Web Development",
-    description: "Creative portfolio with immersive animations and interactive elements.",
+    title: "Website Portfolio",
+    category: "Pengembangan Web",
+    description: "Portfolio kreatif dengan animasi imersif dan elemen interaktif.",
     image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
     tags: ["Three.js", "GSAP", "WebGL"],
     year: "2024"
@@ -77,14 +77,14 @@ const ProjectsSection = () => {
         <div className="mb-16 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
           <div>
             <span className="text-xs tracking-[0.3em] text-muted-foreground uppercase">
-              02 — Projects
+              02 — Proyek
             </span>
             <h2 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground">
-              Selected Works
+              Karya Terpilih
             </h2>
           </div>
           <button className="group text-sm tracking-widest text-foreground/60 hover:text-foreground transition-colors uppercase flex items-center gap-2">
-            View All Projects
+            Lihat Semua Proyek
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </button>
         </div>
@@ -114,7 +114,7 @@ const ProjectsSection = () => {
                       {project.description}
                     </p>
                     <button className="mt-6 px-6 py-2 border border-foreground/20 text-xs tracking-widest uppercase hover:bg-foreground hover:text-background transition-colors">
-                      View Project
+                      Lihat Proyek
                     </button>
                   </div>
                 </div>

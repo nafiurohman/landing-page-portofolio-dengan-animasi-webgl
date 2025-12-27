@@ -5,12 +5,12 @@ const AboutSection = () => {
         {/* Section Header */}
         <div className="mb-16">
           <span className="text-xs tracking-[0.3em] text-muted-foreground uppercase">
-            01 — About
+            01 — Tentang
           </span>
           <h2 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-            Passionate about creating
+            Bersemangat menciptakan
             <br />
-            <span className="text-primary">digital experiences</span>
+            <span className="text-primary">pengalaman digital</span>
           </h2>
         </div>
 
@@ -19,18 +19,20 @@ const AboutSection = () => {
           {/* Left Column - Bio */}
           <div className="space-y-6">
             <p className="text-lg text-foreground/80 leading-relaxed">
-              I'm a creative developer and designer based in Indonesia, specializing in building 
-              exceptional digital experiences. With a passion for clean code and beautiful design, 
-              I bring ideas to life through innovative web applications.
+              Saya adalah pengembang kreatif dan desainer yang berbasis di Indonesia, 
+              mengkhususkan diri dalam membangun pengalaman digital yang luar biasa. 
+              Dengan passion untuk kode yang bersih dan desain yang indah, 
+              saya mewujudkan ide melalui aplikasi web yang inovatif.
             </p>
             <p className="text-lg text-foreground/80 leading-relaxed">
-              My journey in tech started with a curiosity about how things work on the web. 
-              Today, I focus on creating seamless user experiences that combine aesthetics 
-              with functionality.
+              Perjalanan saya di dunia teknologi dimulai dengan rasa ingin tahu tentang 
+              bagaimana hal-hal bekerja di web. Hari ini, saya fokus pada menciptakan 
+              pengalaman pengguna yang mulus yang menggabungkan estetika dengan fungsionalitas.
             </p>
             <p className="text-lg text-foreground/80 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing 
-              to open source, or capturing moments through photography.
+              Ketika saya tidak sedang coding, Anda akan menemukan saya menjelajahi 
+              teknologi baru, berkontribusi pada open source, atau mengabadikan momen 
+              melalui fotografi.
             </p>
           </div>
 
@@ -40,35 +42,35 @@ const AboutSection = () => {
             <div className="grid grid-cols-2 gap-8">
               <div className="space-y-2">
                 <span className="text-5xl font-bold text-primary">5+</span>
-                <p className="text-sm text-muted-foreground">Years of Experience</p>
+                <p className="text-sm text-muted-foreground">Tahun Pengalaman</p>
               </div>
               <div className="space-y-2">
                 <span className="text-5xl font-bold text-primary">50+</span>
-                <p className="text-sm text-muted-foreground">Projects Completed</p>
+                <p className="text-sm text-muted-foreground">Proyek Selesai</p>
               </div>
               <div className="space-y-2">
                 <span className="text-5xl font-bold text-primary">30+</span>
-                <p className="text-sm text-muted-foreground">Happy Clients</p>
+                <p className="text-sm text-muted-foreground">Klien Puas</p>
               </div>
               <div className="space-y-2">
                 <span className="text-5xl font-bold text-primary">10+</span>
-                <p className="text-sm text-muted-foreground">Awards Won</p>
+                <p className="text-sm text-muted-foreground">Penghargaan</p>
               </div>
             </div>
 
             {/* Personal Info */}
             <div className="space-y-4 border-t border-border pt-8">
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Location</span>
+                <span className="text-muted-foreground">Lokasi</span>
                 <span className="text-foreground">Indonesia</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Email</span>
-                <span className="text-foreground">hello@nafiurohman.dev</span>
+                <span className="text-foreground">nafiurohman25@gmail.com</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Availability</span>
-                <span className="text-primary">Open to work</span>
+                <span className="text-muted-foreground">Ketersediaan</span>
+                <span className="text-primary">Terbuka untuk bekerja</span>
               </div>
             </div>
           </div>

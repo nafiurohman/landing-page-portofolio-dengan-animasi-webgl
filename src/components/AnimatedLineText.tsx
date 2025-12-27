@@ -159,7 +159,7 @@ const AnimatedLineText = () => {
   };
 
   const easeOutQuart = (t: number): number => {
-    return 1 - Math.pow(1 - t, 4);
+    return 1 - Math.pow(1 - t, 2);
   };
 
   const draw = (ctx: CanvasRenderingContext2D) => {
@@ -167,11 +167,11 @@ const AnimatedLineText = () => {
 
     const scroll = scrollProgressRef.current;
     // Invert: 1 = fully visible (at top), 0 = hidden (scrolled down)
-    const visibility = Math.max(0, Math.min(1, 1 - scroll * 3));
+    const visibility = Math.max(0, Math.min(1, 1 - scroll * 1.5));
 
     linesRef.current.forEach((line) => {
       // Stagger the animation based on line index
-      const staggerDelay = line.index / line.totalLines * 0.3;
+      const staggerDelay = line.index / line.totalLines * 0.6;
       const lineVisibility = Math.max(0, Math.min(1, (visibility - staggerDelay) / (1 - staggerDelay)));
       
       const progress = easeOutQuart(lineVisibility);

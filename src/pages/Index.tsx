@@ -5,8 +5,8 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>NAFIUROHMAN | Creative Developer & Designer</title>
-        <meta name="description" content="Portfolio of Nafiurohman - Creative Developer & Designer crafting digital experiences at the intersection of design, technology, and art." />
+        <title>NAFIUROHMAN | Pengembang Kreatif & Desainer</title>
+        <meta name="description" content="Portfolio Nafiurohman - Pengembang Kreatif & Desainer yang menciptakan pengalaman digital di persimpangan desain, teknologi, dan seni." />
       </Helmet>
       <main className="scroll-container">
         <Hero />
